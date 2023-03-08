@@ -18,4 +18,10 @@ const jonasNew = `Les caractéristiques de Jonas :
 - Travail : ${job}.`;
 console.log(jonasNew);
 
+// Multiline string
+console.log(
+    'String with \n\
+    multiple \n\
+    lines'
+);
 
