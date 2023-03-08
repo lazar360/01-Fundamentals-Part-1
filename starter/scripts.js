@@ -1,23 +1,21 @@
 const isConnected = "Je suis connecté";
 console.log(isConnected);
 
-// let firstName = "John";
-// console.log(firstName);
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthDate = 1991;
+const cetteAnnee = new Date().getFullYear();
 
-// let age = 30;
-// age = 31;
+// Pas de template : c'est moche
+const jonas = "I'm " + firstName + ', a '
++ (cetteAnnee - birthDate) + ' years old !' + job;
+console.log(jonas);
 
-// const birthYear = 1991;
-//birthYear = 1992;
-//const job;
-
-var ladate=new Date()
-console.log("Nous sommes le : ");
-console.log(ladate.getDate()+"/"+(ladate.getMonth()+1)+"/"+ladate.getFullYear())
-const ageJonas = ladate.getFullYear() - 1991;
-const ageSarah = ladate.getFullYear() - 2018;
-console.log(ageJonas, ageSarah);
-console.log(ageJonas * 2, ageJonas /10, 2**3);
-
+// Avec template : pas mal
+const jonasNew = `Les caractéristiques de Jonas :
+- Prénom : ${firstName} ; 
+- Âge : ${cetteAnnee - birthDate} ;
+- Travail : ${job}.`;
+console.log(jonasNew);
 
 
