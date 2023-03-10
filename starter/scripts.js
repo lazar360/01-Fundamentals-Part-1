@@ -1,14 +1,18 @@
 const isConnected = "Je suis connecté";
 console.log(isConnected);
 
-const age = 19;
+const age = 9;
 const isOldEnough = age >= 18;
 
 if(isOldEnough){
     console.log("Old enough");
 } else {
-    console.log("New enough");
+    const yearsLeft = 18 - age;
+    console.log(`You wait ${yearsLeft} years`);
 }
+
+
+
 
 
 
