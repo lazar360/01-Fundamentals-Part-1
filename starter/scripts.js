@@ -1,27 +1,14 @@
 const isConnected = "Je suis connecté";
 console.log(isConnected);
 
-const firstName = 'Jonas';
-const job = 'teacher';
-const birthDate = 1991;
-const cetteAnnee = new Date().getFullYear();
+const age = 19;
+const isOldEnough = age >= 18;
 
-// Pas de template : c'est moche
-const jonas = "I'm " + firstName + ', a '
-+ (cetteAnnee - birthDate) + ' years old !' + job;
-console.log(jonas);
+if(isOldEnough){
+    console.log("Old enough");
+} else {
+    console.log("New enough");
+}
 
-// Avec template : pas mal
-const jonasNew = `Les caractéristiques de Jonas :
-- Prénom : ${firstName} ; 
-- Âge : ${cetteAnnee - birthDate} ;
-- Travail : ${job}.`;
-console.log(jonasNew);
 
-// Multiline string
-console.log(
-    'String with \n\
-    multiple \n\
-    lines'
-);
 
